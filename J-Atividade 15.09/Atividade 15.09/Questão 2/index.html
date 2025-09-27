@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q2: Calculadora de IMC</title>
+    <!-- Poppins font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculadora de IMC</h1>
+      <label for="peso">Peso (kg):</label><br />
+      <input type="number" id="peso" step="0.1" /><br />
+
+      <label for="altura">Altura (m):</label><br />
+      <input type="number" id="altura" step="0.01" /><br />
+      <h3>Seu IMC é: <span id="resultado"></span></h3>
+      <button onclick="calcularIMC()">CALCULAR</button>
+    </div>
+  </body>
+</html>
