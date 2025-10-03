@@ -2,7 +2,7 @@ function sortearTimes(){
     let nomesInput = document.getElementById("nomes").value.trim();
 
     if (nomesInput === "") {
-        document.getElementById("resultado").innerHTML = "⚠️ Digite pelo menos um nome.";
+        document.getElementById("resultado").innerHTML = "Digite pelo menos um nome.";
         return;
     }
 
@@ -11,12 +11,12 @@ function sortearTimes(){
     let numeroTimes = parseInt(document.getElementById("numeroTimes").value);
 
      if (numeroTimes < 2) {
-        document.getElementById("resultado").innerHTML = "⚠️ Escolha pelo menos 2 times.";
+        document.getElementById("resultado").innerHTML = "Escolha pelo menos 2 times.";
         return;
     }
 
     if (numeroTimes > nomes.length) {
-        document.getElementById("resultado").innerHTML = "⚠️ Não é possível ter mais times do que pessoas.";
+        document.getElementById("resultado").innerHTML = "Não é possível ter mais times do que pessoas.";
         return;
     }
 
@@ -38,4 +38,5 @@ function sortearTimes(){
     });
 
     document.getElementById("resultado").innerHTML = resultadoHTML;
+
 }
